@@ -27,7 +27,7 @@ require(dplyr) # needs to be run every time you start R and want to use %>%
 
 
 # importing the dataset and creating a backup of it, at the same time
-data <- read.csv("C:/Users/junio/JNR/NCI/CompSci 4th/Software Project/Deferrel stuff/sam 1/sam/heart.csv")
+data <- read.csv("heart.csv")
 data_bckup <- data
 names(data)[1] <- "age" # renaming the age column, due to some data issue
 
