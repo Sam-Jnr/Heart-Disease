@@ -1,5 +1,7 @@
 #importing the required packages to your workspace
 
+
+install.packages("tidyverse")
 require(tidyverse)  # For data cleaning, sorting, and visualization
 install.packages("DataExplorer") # For Exploratory Data Analysis  
 require(DataExplorer)
@@ -24,10 +26,10 @@ require(e1071)
 install.packages("dplyr") # package installations are only needed the first time you use it
 require(dplyr) # needs to be run every time you start R and want to use %>%
 
-
+#if issue occurs with code it means the above packages were not installed correctly so try re-installing them
 
 # importing the dataset and creating a backup of it, at the same time
-data <- read.csv("heart.csv")
+data <- read.csv("C:/Users/x16331191/Downloads/OneDrive_2020-08-04/Heart Disease/heart.csv")#change file to wherever file is stores
 data_bckup <- data
 names(data)[1] <- "age" # renaming the age column, due to some data issue
 
@@ -469,3 +471,4 @@ accuracytests
 
 ## The accuracy of the svm model is 08915094 for the training data and 
 # 0.7362637 for the test data
+
